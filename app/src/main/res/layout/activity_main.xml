@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvjudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Form Pendaftaran!"
+        android:layout_marginTop="15sp"
+        android:textSize="30sp"
+        android:textColor="@color/purple_200"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Nama"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvjudul"
+        android:layout_marginTop="20sp"/>
+
+    <EditText
+        android:id="@+id/edUsia"
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Usia"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edNama"
+        android:layout_marginTop="20sp"/>
+
+    <EditText
+        android:id="@+id/edAsal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Daerah Asal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edUsia"
+        android:layout_marginTop="20sp"/>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/edAsal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        >
+
+        <Button
+            android:id="@+id/btnsubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textStyle="bold"
+            android:textColor="@color/purple_200"
+            android:layout_below="@id/edAsal"
+            android:layout_marginLeft="35sp"/>
+        <Button
+            android:id="@+id/btnbatal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Batal"
+            android:textStyle="bold"
+            android:textColor="@color/purple_200"
+            android:layout_below="@id/edAsal"
+            android:layout_marginRight="35sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnbundel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bundle"
+        android:textStyle="bold"
+        android:textColor="@color/purple_200"
+        android:layout_below="@id/ll1"
+        android:layout_marginRight="35sp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
